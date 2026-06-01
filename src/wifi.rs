@@ -4,8 +4,8 @@ use esp_idf_svc::nvs::EspDefaultNvsPartition;
 use esp_idf_hal::modem::Modem;
 use log::{info, warn};
 
-const SSID: &str = "Redmi 15";
-const PASSWORD: &str = "12345678";
+const SSID: &str = "Wifi SSID";
+const PASSWORD: &str = "Your Wifi Password";
 
 /// Connects to Wi-Fi. Returns the Wi-Fi driver instance along with a boolean 
 /// indicating if the network connection was successfully established with an IP address.
