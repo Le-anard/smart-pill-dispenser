@@ -1,0 +1,26 @@
+[package]
+name = "pill_dispenser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Aligned ESP-IDF crates for ESP-IDF v5.5.x
+esp-idf-sys = { version = "0.37.2", features = ["binstart", "std"] }
+esp-idf-hal = "0.46.2"
+esp-idf-svc = "0.52.1"
+
+# Hardware and logic crates
+embedded-hal = "0.2"
+ssd1306 = "0.8"
+embedded-graphics = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+chrono = "0.4"
+anyhow = "1.0"
+
+[build-dependencies]
+embuild = "0.33.1"
+
+[package.metadata.espflash]
+partition_table = "partitions.csv"
