@@ -4,8 +4,8 @@ use esp_idf_svc::nvs::EspDefaultNvsPartition;
 use esp_idf_hal::modem::Modem;
 use log::{info, warn};
 
-const SSID: &str = "Wifi SSID";
-const PASSWORD: &str = "Your Wifi Password";
+const SSID: &str = "YOUR_WIFI_SSID";
+const PASSWORD: &str = "YOUR_WIFI_PASSWORD";
 
 /// Connects to Wi-Fi. Returns the Wi-Fi driver instance along with a boolean 
 /// indicating if the network connection was successfully established with an IP address.
